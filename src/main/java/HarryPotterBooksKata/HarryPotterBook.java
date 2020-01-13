@@ -2,15 +2,21 @@ package HarryPotterBooksKata;
 
 public class HarryPotterBook {
 
-    private int price;
-    private String bookVolume;
+    public double price;
+    public String bookVolume;
 
-    public HarryPotterBook(int price, String bookVolume){
+
+    public HarryPotterBook(double price, String bookVolume){
         this.price = price;
         this.bookVolume = bookVolume;
     }
 
-    public int getPrice() {
+    public double checkBookPrice() {
         return price;
     }
+
+
 }
+
+
+//book can know about its individual price but not its discounted price related to others.
